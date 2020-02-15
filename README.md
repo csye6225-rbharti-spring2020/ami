@@ -18,10 +18,5 @@ packer build \
 or
 
 ```
-packer build -var-file=./ami-vars-local ubuntu-ami.json
+packer build -var-file=./ami-vars-local.json ubuntu-ami.json
 ```
-
-### Note:
-
-1. Variables containing sensitive information are not committed.
-2. 

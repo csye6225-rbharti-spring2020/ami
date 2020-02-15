@@ -30,3 +30,6 @@ workflows:
       - packer-build:
           requires:
             - validate
+          filters:
+            branches:
+              only: master
