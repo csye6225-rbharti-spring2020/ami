@@ -33,6 +33,7 @@
             "environment_vars": [],
             "inline": [
                 "sudo apt update",
+                "sudo apt install openjdk-7-jdk openjdk-7-jre-headless",
                 "sudo apt install default-jdk -y",
                 "sudo apt install maven -y"
             ]
