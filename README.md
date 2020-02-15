@@ -20,3 +20,8 @@ or
 ```
 packer build -var-file=./ami-vars-local ubuntu-ami.json
 ```
+
+### Note:
+
+1. Variables containing sensitive information are not committed.
+2. 

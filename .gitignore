@@ -5,6 +5,6 @@ packer_cache/
 *.box
 
 
-ami-vars-local.jso
+ami-vars-local.json
 
 .DS_Store
