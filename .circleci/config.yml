@@ -20,7 +20,12 @@ jobs:
           at: ~/packer
       - run:
           name: Packer Build
-          command: packer build -var 'aws_access_key=${aws_access_key}' -var 'aws_secret_key=${aws_secret_key}' var 'aws_region=${aws_region}' -var 'aws_source_ami=${aws_source_ami}' ubuntu-ami.json
+          command: > 
+                  packer build -var 'aws_access_key=${aws_access_key}' 
+                  -var 'aws_secret_key=${aws_secret_key}' 
+                  -var 'aws_region=${aws_region}' 
+                  -var 'aws_source_ami=${aws_source_ami}' 
+                  ubuntu-ami.json
 
 workflows:
   version: 2
