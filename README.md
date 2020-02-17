@@ -12,6 +12,7 @@ packer build \
     -var 'aws_secret_key=REDACTED' \
     -var 'aws_region=us-east-1' \
     -var 'subnet_id=REDACTED' \
+    -var 'aws_ami_users=REDACTED' \
     ubuntu-ami.json
 ```
 
@@ -32,6 +33,6 @@ packer build -var 'aws_access_key='${aws_access_key}
 -var 'aws_secret_key='${aws_secret_key} 
 -var 'aws_region='${aws_region} 
 -var 'aws_source_ami='${aws_source_ami} 
--var 'ami_users='${ami_users}
+-var 'aws_ami_users='${aws_ami_users}
 ubuntu-ami.json
 ```
