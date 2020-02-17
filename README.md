@@ -32,5 +32,6 @@ packer build -var 'aws_access_key='${aws_access_key}
 -var 'aws_secret_key='${aws_secret_key} 
 -var 'aws_region='${aws_region} 
 -var 'aws_source_ami='${aws_source_ami} 
+-var 'ami_users='${ami_users}
 ubuntu-ami.json
 ```
