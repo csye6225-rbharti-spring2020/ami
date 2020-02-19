@@ -34,7 +34,6 @@
             "type": "shell",
             "environment_vars": [],
             "inline": [
-                "#!/bin/bash",
                 "sudo apt install --fix-broken",
                 "sudo apt-get update -y",
                 "sudo apt-get upgrade -y",
