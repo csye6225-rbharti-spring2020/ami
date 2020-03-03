@@ -43,8 +43,12 @@
                 "sudo apt-get install ca-certificates-java",
                 "sudo apt-get install maven -y",
                 "sudo apt-get install wget -y",
+                "sudo apt-get install ruby",
                 "cd /home/ubuntu",
-                "wget https://{{user `aws_bucket_name`}}.s3.{{user `aws_region`}}.amazonaws.com/latest/install"
+                "wget https://{{user `aws_bucket_name`}}.s3.{{user `aws_region`}}.amazonaws.com/latest/install",
+                "chmod +x ./install",
+                "sudo ./install auto",
+                "sudo service codedeploy-agent status"
             ]
         }
     ]
