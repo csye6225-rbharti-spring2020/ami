@@ -41,7 +41,10 @@
                 "sudo apt-get install openjdk-11-jre-headless -y",
                 "sudo apt-get install openjdk-11-jdk-headless -y",
                 "sudo apt-get install ca-certificates-java",
-                "sudo apt-get install maven -y"
+                "sudo apt-get install maven -y",
+                "sudo apt-get install wget -y",
+                "cd /home/ubuntu",
+                "wget https://{{user `aws_bucket_name`}}.s3.{{user `aws_region`}}.amazonaws.com/latest/install"
             ]
         }
     ]
