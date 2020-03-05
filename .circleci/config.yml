@@ -38,4 +38,6 @@ workflows:
             - validate
           filters:
             branches:
-              only: master
+              only:
+                - master
+                - assignment7
