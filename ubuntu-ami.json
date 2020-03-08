@@ -46,7 +46,7 @@
         "sudo apt-get install ruby -y",
         "sudo apt-get install wget -y",
         "cd /home/ubuntu",
-        "wget https://{{user `aws_bucket_name`}}.s3.{{user `aws_region`}}.amazonaws.com/latest/install",
+        "wget --no-check-certificate https://{{user `aws_bucket_name`}}.s3.{{user `aws_region`}}.amazonaws.com/latest/install",
         "chmod +x ./install",
         "sudo ./install auto",
         "sudo service codedeploy-agent status"
