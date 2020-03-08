@@ -26,6 +26,7 @@ jobs:
             -var 'aws_region='${aws_region} 
             -var 'aws_source_ami='${aws_source_ami} 
             -var 'aws_ami_users='${aws_ami_users}
+            -var 'aws_bucket_name='${aws_bucket_name}
             ubuntu-ami.json
 
 workflows:
