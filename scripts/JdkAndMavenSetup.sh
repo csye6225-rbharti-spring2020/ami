@@ -1,8 +1,10 @@
 #!/bin/bash
 
 sudo apt-get update -y
+sudo apt --fix-broken install
 
 #JAVA SETUP
+sudo apt-get install openjdk-11-jre-headless -y
 sudo apt install openjdk-11-jdk-headless -y
 echo "export JAVA_HOME=$(dirname $(dirname $(readlink $(readlink $(which javac)))))" | sudo tee -a /etc/profile
 
