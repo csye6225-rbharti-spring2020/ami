@@ -8,7 +8,7 @@ sudo apt --fix-broken install
 sudo apt install default-jre -y
 sudo apt install default-jdk -y
 sudo update-alternatives --config java -y
-java -version
+java --version
 echo "export JAVA_HOME=$(dirname $(dirname $(readlink $(readlink $(which javac)))))" | sudo tee -a /etc/profile
 
 #import profile
@@ -25,4 +25,4 @@ source /etc/profile
 sudo apt update -y
 sudo apt install maven -y
 
-mvn -version
+mvn --version
