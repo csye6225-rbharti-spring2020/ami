@@ -4,12 +4,9 @@ sudo apt update -y
 sudo apt upgrade -y
 sudo apt --fix-broken install
 
-#installing all the required java certificates
-sudo apt install ca-certificates-java
-
 #JAVA SETUP
-sudo apt install openjdk-11-jre-headless -y
-sudo apt install openjdk-11-jdk-headless -y
+sudo apt install default-jre -y
+sudo apt install default-jdk -y
 echo "export JAVA_HOME=$(dirname $(dirname $(readlink $(readlink $(which javac)))))" | sudo tee -a /etc/profile
 
 #import profile
