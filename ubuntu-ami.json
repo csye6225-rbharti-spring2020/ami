@@ -39,7 +39,8 @@
       ],
       "scripts": [
         "./scripts/JdkAndMavenSetup.sh",
-        "./scripts/CodeDeploySetup.sh"
+        "./scripts/CodeDeploySetup.sh",
+        "./scripts/CloudWatch.sh"
       ]
     }
   ]
